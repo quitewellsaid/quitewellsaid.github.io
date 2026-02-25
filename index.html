@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quite Well Said — Eulogy Writing Services</title>
+<meta name="description" content="From a 30-minute conversation to a finished eulogy in 24–48 hours. Just $95. We listen, we write, and we help you honor a life well lived.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CSS VARIABLES & RESET
+   ============================================================ */
+:root {
+  --cream: #FAF7F2;
+  --warm-white: #FEFDFB;
+  --parchment: #F3EDE4;
+  --sand: #E8DFD1;
+  --clay: #C4B5A0;
+  --earth: #8B7D6B;
+  --walnut: #5C4F3D;
+  --ink: #2C241C;
+  --deep: #1A150F;
+  --sage: #7A8B6F;
+  --sage-light: #E8EDE4;
+  --sage-dark: #5A6B4F;
+  --rose: #C4907A;
+  --rose-light: #F0E0D8;
+  --gold: #B8983E;
+  --gold-light: #F5EDDA;
+  --blue-muted: #6B7D8A;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  --hand: 'Caveat', cursive;
+  --max-width: 1200px;
+  --section-pad: clamp(80px, 10vw, 140px);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
+
+.section-label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--earth);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--earth);
+  max-width: 600px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes gentlePulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 60px; }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+.stagger-6 { transition-delay: 0.6s; }
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196, 181, 160, 0.3);
+  transition: all 0.4s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(250, 247, 242, 0.97);
+  box-shadow: 0 2px 30px rgba(44, 36, 28, 0.08);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.logo span {
+  color: var(--sage-dark);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--walnut);
+  letter-spacing: 0.03em;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--sage-dark);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover { color: var(--sage-dark); }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--sage-dark);
+  color: var(--cream) !important;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+  background: var(--walnut);
+  transform: translateY(-1px);
+}
+
+.nav-cta::after { display: none !important; }
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+.mobile-toggle span {
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: all 0.3s;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(165deg, var(--cream) 0%, var(--parchment) 40%, var(--sand) 100%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 70%;
+  height: 140%;
+  background: radial-gradient(ellipse at center, rgba(122, 139, 111, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, var(--cream), transparent);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  padding-top: 120px;
+}
+
+.hero-eyebrow {
+  font-family: var(--hand);
+  font-size: 1.4rem;
+  color: var(--sage-dark);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.3s forwards;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 300;
+  color: var(--deep);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.5s forwards;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--sage-dark);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--earth);
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+  max-width: 560px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.7s forwards;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.9s forwards;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  background: var(--sage-dark);
+  color: var(--cream);
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(90, 107, 79, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--walnut);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(90, 107, 79, 0.3);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.6rem;
+  color: var(--walnut);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--clay);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--sage-dark);
+  color: var(--sage-dark);
+}
+
+.hero-trust {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 1.1s forwards;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--earth);
+  font-weight: 400;
+}
+
+.trust-icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--sage-light);
+  color: var(--sage-dark);
+  font-size: 0.6rem;
+}
+
+/* Decorative element */
+.hero-decoration {
+  position: absolute;
+  top: 50%;
+  right: clamp(40px, 8vw, 120px);
+  transform: translateY(-50%);
+  width: clamp(200px, 25vw, 380px);
+  height: clamp(200px, 25vw, 380px);
+  opacity: 0;
+  animation: fadeIn 1.5s ease 1.2s forwards;
+  pointer-events: none;
+}
+
+.hero-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(122, 139, 111, 0.2);
+  position: relative;
+}
+
+.hero-circle::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(122, 139, 111, 0.15);
+}
+
+.hero-circle::after {
+  content: '"';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-family: var(--serif);
+  font-size: 8rem;
+  color: rgba(122, 139, 111, 0.12);
+  line-height: 1;
+}
+
+/* ============================================================
+   HOW IT WORKS
+   ============================================================ */
+.how-it-works {
+  padding: var(--section-pad) 0;
+  background: var(--cream);
+  position: relative;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.step-card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: var(--warm-white);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+  transition: all 0.4s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(44, 36, 28, 0.08);
+  border-color: rgba(122, 139, 111, 0.3);
+}
+
+.step-number {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--sage);
+  opacity: 0.4;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.step-title {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+}
+
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--earth);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.step-connector {
+  position: absolute;
+  top: 3.5rem;
+  right: -1.2rem;
+  color: var(--clay);
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* ============================================================
+   WHAT YOU RECEIVE
+   ============================================================ */
+.what-you-receive {
+  padding: var(--section-pad) 0;
+  background: var(--parchment);
+  position: relative;
+}
+
+.what-you-receive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--clay), transparent);
+}
+
+.receive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.receive-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.8rem;
+  background: var(--warm-white);
+  border-radius: 12px;
+  border: 1px solid rgba(196, 181, 160, 0.25);
+  transition: all 0.3s ease;
+}
+
+.receive-item:hover {
+  border-color: rgba(122, 139, 111, 0.3);
+  box-shadow: 0 4px 20px rgba(44, 36, 28, 0.05);
+}
+
+.receive-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.receive-text h4 {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.receive-text p {
+  font-size: 0.83rem;
+  color: var(--earth);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ============================================================
+   SAMPLE EXCERPT
+   ============================================================ */
+.sample {
+  padding: var(--section-pad) 0;
+  background: var(--cream);
+}
+
+.sample-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.sample-text .section-label { margin-bottom: 1rem; }
+
+.sample-excerpt {
+  position: relative;
+  padding: 3rem;
+  background: var(--warm-white);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+  box-shadow: 0 8px 40px rgba(44, 36, 28, 0.06);
+}
+
+.sample-excerpt::before {
+  content: '\201C';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-family: var(--serif);
+  font-size: 5rem;
+  color: var(--sage);
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.sample-excerpt p {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 2;
+  color: var(--walnut);
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.sample-excerpt p + p {
+  margin-top: 1.2rem;
+}
+
+.sample-attribution {
+  margin-top: 1.5rem;
+  font-family: var(--hand);
+  font-size: 1.1rem;
+  color: var(--sage-dark);
+}
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+.pricing {
+  padding: var(--section-pad) 0;
+  background: linear-gradient(180deg, var(--parchment) 0%, var(--cream) 100%);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.pricing-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.price-card {
+  background: var(--warm-white);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(44, 36, 28, 0.1);
+}
+
+.price-card.featured {
+  border-color: var(--sage);
+  box-shadow: 0 8px 40px rgba(90, 107, 79, 0.12);
+}
+
+.price-card.featured::before {
+  content: 'Most Popular';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem 1.2rem;
+  background: var(--sage-dark);
+  color: var(--cream);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+
+.price-tier-name {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--earth);
+  margin-bottom: 0.5rem;
+}
+
+.price-amount {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.price-tagline {
+  font-size: 0.88rem;
+  color: var(--earth);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.price-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.price-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  font-size: 0.85rem;
+  color: var(--walnut);
+  line-height: 1.5;
+}
+
+.price-features li::before {
+  content: '✓';
+  flex-shrink: 0;
+  color: var(--sage-dark);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.price-cta {
+  display: block;
+  text-align: center;
+  padding: 0.9rem;
+  border-radius: 100px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+}
+
+.price-cta-primary {
+  background: var(--sage-dark);
+  color: var(--cream);
+}
+
+.price-cta-primary:hover {
+  background: var(--walnut);
+}
+
+.price-cta-secondary {
+  border: 1px solid var(--clay);
+  color: var(--walnut);
+}
+
+.price-cta-secondary:hover {
+  border-color: var(--sage-dark);
+  color: var(--sage-dark);
+}
+
+.pricing-extras {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.pricing-extras p {
+  font-size: 0.9rem;
+  color: var(--earth);
+  font-weight: 300;
+}
+
+.pricing-extras a {
+  color: var(--sage-dark);
+  font-weight: 500;
+  border-bottom: 1px solid var(--sage);
+  transition: all 0.3s;
+}
+
+.pricing-extras a:hover {
+  color: var(--walnut);
+  border-color: var(--walnut);
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials {
+  padding: var(--section-pad) 0;
+  background: var(--cream);
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: var(--warm-white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(196, 181, 160, 0.25);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 30px rgba(44, 36, 28, 0.06);
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-quote {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--walnut);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.testimonial-author {
+  font-size: 0.82rem;
+  color: var(--earth);
+}
+
+.testimonial-author strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ============================================================
+   LIFE STORY / PRE-NEED
+   ============================================================ */
+.life-story {
+  padding: var(--section-pad) 0;
+  background: var(--parchment);
+  position: relative;
+  overflow: hidden;
+}
+
+.life-story::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(184, 152, 62, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.life-story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.life-story-visual {
+  position: relative;
+}
+
+.book-mockup {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3/4;
+  background: linear-gradient(145deg, var(--walnut) 0%, var(--ink) 100%);
+  border-radius: 4px 16px 16px 4px;
+  box-shadow: 12px 12px 40px rgba(44, 36, 28, 0.25), -2px 0 8px rgba(44, 36, 28, 0.15);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.book-mockup::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.3), transparent);
+  border-radius: 4px 0 0 4px;
+}
+
+.book-title {
+  text-align: center;
+  color: var(--sand);
+}
+
+.book-title .label {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.book-title h4 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--sand);
+  margin-bottom: 0.8rem;
+}
+
+.book-title .years {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+}
+
+.book-title .divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.2rem auto;
+  opacity: 0.5;
+}
+
+.life-story-content .section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+}
+
+.life-story-features {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.life-story-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.6rem 0;
+  font-size: 0.92rem;
+  color: var(--walnut);
+  line-height: 1.6;
+}
+
+.life-story-features li::before {
+  content: '◆';
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ============================================================
+   PRE-NEED BANNER
+   ============================================================ */
+.pre-need-banner {
+  padding: clamp(50px, 6vw, 80px) 0;
+  background: linear-gradient(135deg, var(--walnut) 0%, var(--deep) 100%);
+  color: var(--sand);
+  position: relative;
+  overflow: hidden;
+}
+
+.pre-need-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.pre-need-inner {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pre-need-eyebrow {
+  font-family: var(--hand);
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.pre-need-inner h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 300;
+  color: var(--parchment);
+  margin-bottom: 1.2rem;
+}
+
+.pre-need-inner p {
+  font-size: 1rem;
+  color: var(--clay);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: var(--gold);
+  color: var(--deep);
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background: #C9A94E;
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq {
+  padding: var(--section-pad) 0;
+  background: var(--cream);
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(196, 181, 160, 0.4);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.faq-question:hover { color: var(--sage-dark); }
+
+.faq-toggle {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--earth);
+  transition: all 0.3s;
+}
+
+.faq-item.open .faq-toggle {
+  background: var(--sage-dark);
+  border-color: var(--sage-dark);
+  color: var(--cream);
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+}
+
+.faq-answer p {
+  padding: 0 0 1.5rem 0;
+  font-size: 0.92rem;
+  color: var(--earth);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* ============================================================
+   PARTNERS SECTION
+   ============================================================ */
+.partners {
+  padding: var(--section-pad) 0;
+  background: var(--parchment);
+}
+
+.partners-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.partner-types {
+  margin-top: 2rem;
+}
+
+.partner-type {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(196, 181, 160, 0.3);
+}
+
+.partner-type:last-child { border-bottom: none; }
+
+.partner-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.partner-type h4 {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.partner-type p {
+  font-size: 0.83rem;
+  color: var(--earth);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.partner-benefits {
+  background: var(--warm-white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(196, 181, 160, 0.25);
+  margin-top: 2rem;
+}
+
+.partner-benefits h3 {
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.partner-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  font-size: 0.88rem;
+  color: var(--walnut);
+  line-height: 1.6;
+  list-style: none;
+}
+
+.partner-benefits li::before {
+  content: '→';
+  flex-shrink: 0;
+  color: var(--sage-dark);
+  font-weight: 700;
+}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.final-cta {
+  padding: clamp(80px, 10vw, 140px) 0;
+  background: var(--cream);
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.final-cta p {
+  font-size: 1.05rem;
+  color: var(--earth);
+  font-weight: 300;
+  max-width: 550px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.final-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.final-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.final-contact a {
+  font-size: 0.88rem;
+  color: var(--earth);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s;
+}
+
+.final-contact a:hover { color: var(--sage-dark); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  padding: 3rem 0;
+  background: var(--deep);
+  color: var(--clay);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--sand);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--clay);
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--sand); }
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--earth);
+}
+
+/* ============================================================
+   SCHEDULING SECTION
+   ============================================================ */
+.scheduling {
+  padding: var(--section-pad) 0;
+  background: var(--warm-white);
+  position: relative;
+}
+
+.scheduling::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--clay), transparent);
+}
+
+.scheduling-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.scheduling-header .section-subtitle {
+  margin: 0 auto;
+}
+
+.scheduling-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.scheduling-info {
+  padding: 2.5rem;
+  background: var(--parchment);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+}
+
+.scheduling-info h3 {
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.scheduling-info p {
+  font-size: 0.92rem;
+  color: var(--earth);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.scheduling-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(196, 181, 160, 0.3);
+}
+
+.scheduling-detail:first-of-type { border-top: none; }
+
+.scheduling-detail-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.scheduling-detail-text {
+  font-size: 0.88rem;
+  color: var(--walnut);
+  line-height: 1.5;
+}
+
+.scheduling-detail-text strong {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.15rem;
+}
+
+.calendar-container {
+  background: var(--warm-white);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(44, 36, 28, 0.06);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: var(--parchment);
+  border-bottom: 1px solid rgba(196, 181, 160, 0.3);
+}
+
+.calendar-month {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.calendar-nav button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--walnut);
+  transition: all 0.3s;
+}
+
+.calendar-nav button:hover {
+  background: var(--sage-light);
+  border-color: var(--sage);
+}
+
+.calendar-grid {
+  padding: 1.5rem 2rem;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-weekdays span {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--earth);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: var(--walnut);
+  transition: all 0.2s;
+  position: relative;
+}
+
+.calendar-day.empty { pointer-events: none; }
+
+.calendar-day.past {
+  color: var(--clay);
+  pointer-events: none;
+}
+
+.calendar-day.available {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.calendar-day.available:hover {
+  background: var(--sage-light);
+  color: var(--sage-dark);
+}
+
+.calendar-day.available::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--sage);
+}
+
+.calendar-day.selected {
+  background: var(--sage-dark);
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.calendar-day.selected::after { background: var(--cream); }
+
+.calendar-day.today {
+  border: 1px solid var(--sage);
+}
+
+.time-slots-container {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(196, 181, 160, 0.3);
+  display: none;
+}
+
+.time-slots-container.visible { display: block; }
+
+.time-slots-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.time-slot {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--clay);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--walnut);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.time-slot:hover {
+  border-color: var(--sage);
+  background: var(--sage-light);
+  color: var(--sage-dark);
+}
+
+.time-slot.selected {
+  background: var(--sage-dark);
+  border-color: var(--sage-dark);
+  color: var(--cream);
+  font-weight: 500;
+}
+
+.time-slot.unavailable {
+  color: var(--clay);
+  border-color: rgba(196, 181, 160, 0.3);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.time-slot.unavailable:hover {
+  background: none;
+  border-color: rgba(196, 181, 160, 0.3);
+  color: var(--clay);
+}
+
+.booking-confirm {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(196, 181, 160, 0.3);
+  display: none;
+}
+
+.booking-confirm.visible { display: block; }
+
+.booking-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking-input {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--clay);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--warm-white);
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.booking-input:focus {
+  outline: none;
+  border-color: var(--sage);
+}
+
+.booking-input::placeholder { color: var(--clay); }
+
+.booking-input-full {
+  grid-column: 1 / -1;
+}
+
+.booking-submit {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--sage-dark);
+  color: var(--cream);
+  border: none;
+  border-radius: 100px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+}
+
+.booking-submit:hover {
+  background: var(--walnut);
+}
+
+.booking-confirmation {
+  text-align: center;
+  padding: 2rem;
+  display: none;
+}
+
+.booking-confirmation.visible { display: block; }
+
+.booking-confirmation .check-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1.2rem;
+}
+
+.booking-confirmation h3 {
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.booking-confirmation p {
+  font-size: 0.9rem;
+  color: var(--earth);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ============================================================
+   ASK A QUESTION BUTTON
+   ============================================================ */
+.btn-question {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.8rem;
+  color: var(--walnut);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--clay);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: none;
+}
+
+.btn-question:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ============================================================
+   QUESTION DIALOG
+   ============================================================ */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 21, 15, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.dialog-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dialog-box {
+  background: var(--warm-white);
+  border-radius: 20px;
+  max-width: 520px;
+  width: 100%;
+  padding: 2.5rem;
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.4s ease;
+  box-shadow: 0 20px 60px rgba(26, 21, 15, 0.2);
+}
+
+.dialog-overlay.open .dialog-box {
+  transform: translateY(0) scale(1);
+}
+
+.dialog-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--earth);
+  cursor: pointer;
+  transition: all 0.3s;
+  background: none;
+}
+
+.dialog-close:hover {
+  background: var(--parchment);
+  color: var(--ink);
+}
+
+.dialog-title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.dialog-subtitle {
+  font-size: 0.9rem;
+  color: var(--earth);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.dialog-field {
+  margin-bottom: 1rem;
+}
+
+.dialog-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--walnut);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.dialog-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--clay);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--cream);
+  transition: border-color 0.3s;
+}
+
+.dialog-input:focus {
+  outline: none;
+  border-color: var(--sage);
+}
+
+.dialog-input::placeholder { color: var(--clay); }
+
+.dialog-textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--clay);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--cream);
+  min-height: 120px;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.dialog-textarea:focus {
+  outline: none;
+  border-color: var(--sage);
+}
+
+.dialog-textarea::placeholder { color: var(--clay); }
+
+.dialog-submit {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--sage-dark);
+  color: var(--cream);
+  border: none;
+  border-radius: 100px;
+  font-size: 0.92rem;
+  font-family: var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+}
+
+.dialog-submit:hover { background: var(--walnut); }
+
+.dialog-success {
+  text-align: center;
+  display: none;
+  padding: 1rem 0;
+}
+
+.dialog-success.visible { display: block; }
+
+.dialog-success .check-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1.2rem;
+}
+
+.dialog-success h3 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+}
+
+.dialog-success p {
+  font-size: 0.92rem;
+  color: var(--earth);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.dialog-form-content { display: block; }
+.dialog-form-content.hidden { display: none; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 960px) {
+  .how-grid { grid-template-columns: repeat(2, 1fr); }
+  .step-connector { display: none; }
+  .receive-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+  .testimonial-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .sample-inner { grid-template-columns: 1fr; }
+  .life-story-inner { grid-template-columns: 1fr; }
+  .life-story-visual { order: -1; }
+  .book-mockup { max-width: 280px; }
+  .partners-inner { grid-template-columns: 1fr; }
+  .hero-decoration { display: none; }
+  .scheduling-layout { grid-template-columns: 1fr; }
+  .time-slots-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .mobile-toggle { display: flex; }
+  .how-grid { grid-template-columns: 1fr; }
+  .receive-grid { grid-template-columns: 1fr; }
+  .hero-trust { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .final-cta-actions { flex-direction: column; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .booking-form-row { grid-template-columns: 1fr; }
+  .time-slots-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+.contact-form-section {
+  padding: var(--section-pad) 0;
+  background: var(--warm-white);
+  position: relative;
+}
+.contact-form-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--clay), transparent);
+}
+.contact-header { text-align: center; margin-bottom: 3rem; }
+.contact-header .section-subtitle { margin: 0 auto; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-info {
+  padding: 2.5rem;
+  background: var(--parchment);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+}
+.contact-info h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: 1rem; }
+.contact-info p { font-size: 0.92rem; color: var(--earth); line-height: 1.8; margin-bottom: 1.5rem; font-weight: 300; }
+.contact-detail { display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.7rem 0; border-top: 1px solid rgba(196, 181, 160, 0.3); }
+.contact-detail:first-of-type { border-top: none; }
+.contact-detail-icon { flex-shrink: 0; width: 32px; height: 32px; border-radius: 8px; background: var(--sage-light); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+.contact-detail-text { font-size: 0.88rem; color: var(--walnut); line-height: 1.5; }
+.contact-detail-text strong { display: block; font-weight: 600; color: var(--ink); margin-bottom: 0.15rem; }
+.contact-form-card {
+  background: var(--warm-white);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 181, 160, 0.3);
+  padding: 2.5rem;
+  box-shadow: 0 8px 40px rgba(44, 36, 28, 0.06);
+}
+.contact-form-card h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: 0.5rem; }
+.contact-form-card .form-subtitle { font-size: 0.88rem; color: var(--earth); font-weight: 300; margin-bottom: 1.8rem; }
+.form-field { margin-bottom: 1.2rem; }
+.form-label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--walnut); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.4rem; }
+.form-input { width: 100%; padding: 0.85rem 1rem; border: 1px solid var(--clay); border-radius: 8px; font-family: var(--sans); font-size: 0.9rem; color: var(--ink); background: var(--cream); transition: border-color 0.3s; }
+.form-input:focus { outline: none; border-color: var(--sage); }
+.form-input::placeholder { color: var(--clay); }
+.form-textarea { width: 100%; padding: 0.85rem 1rem; border: 1px solid var(--clay); border-radius: 8px; font-family: var(--sans); font-size: 0.9rem; color: var(--ink); background: var(--cream); min-height: 100px; resize: vertical; transition: border-color 0.3s; }
+.form-textarea:focus { outline: none; border-color: var(--sage); }
+.form-textarea::placeholder { color: var(--clay); }
+.form-submit { display: block; width: 100%; padding: 1rem; background: var(--sage-dark); color: var(--cream); border: none; border-radius: 100px; font-size: 0.95rem; font-family: var(--sans); font-weight: 500; letter-spacing: 0.03em; cursor: pointer; transition: all 0.3s; margin-top: 0.5rem; }
+.form-submit:hover { background: var(--walnut); }
+.form-success { text-align: center; display: none; padding: 2rem 0; }
+.form-success.visible { display: block; }
+.form-success .check-circle { width: 64px; height: 64px; border-radius: 50%; background: var(--sage-light); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 1.2rem; }
+.form-success h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: 0.8rem; }
+.form-success p { font-size: 0.92rem; color: var(--earth); line-height: 1.7; font-weight: 300; }
+.form-content { display: block; }
+.form-content.hidden { display: none; }
+
+/* ============================================================
+   INTRODUCTORY OFFER
+   ============================================================ */
+.intro-offer { padding: var(--section-pad) 0; background: linear-gradient(180deg, var(--parchment) 0%, var(--cream) 100%); }
+.intro-offer-header { text-align: center; margin-bottom: 3rem; }
+.intro-offer-header .section-subtitle { margin: 0 auto; }
+.offer-card {
+  max-width: 580px; margin: 0 auto;
+  background: var(--warm-white); border-radius: 20px; border: 2px solid var(--sage);
+  padding: 3rem 2.5rem; text-align: center;
+  box-shadow: 0 12px 50px rgba(90, 107, 79, 0.12); position: relative;
+}
+.offer-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 0.4rem 1.5rem; background: var(--sage-dark); color: var(--cream); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 100px; }
+.offer-price { font-family: var(--serif); font-size: 4rem; font-weight: 300; color: var(--ink); margin: 1rem 0 0.5rem; }
+.offer-tagline { font-family: var(--serif); font-size: 1.2rem; color: var(--sage-dark); font-style: italic; margin-bottom: 2rem; }
+.offer-features { list-style: none; text-align: left; max-width: 380px; margin: 0 auto 2rem; }
+.offer-features li { display: flex; align-items: flex-start; gap: 0.7rem; padding: 0.55rem 0; font-size: 0.95rem; color: var(--walnut); line-height: 1.5; }
+.offer-features li::before { content: '✓'; flex-shrink: 0; color: var(--sage-dark); font-weight: 700; font-size: 0.85rem; margin-top: 2px; }
+.offer-guarantee { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(196, 181, 160, 0.3); font-size: 0.88rem; color: var(--earth); font-weight: 300; font-style: italic; }
+.offer-guarantee strong { color: var(--sage-dark); font-weight: 600; font-style: normal; }
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Quite Well <span>Said</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#sample">Sample</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started →</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Eulogy Writing Services</p>
+      <h1>We help you tell <em>their story</em></h1>
+      <p class="hero-subtitle">From a 30-minute conversation to a finished eulogy in 24–48 hours. We listen, we write, and we help you honor a life well lived.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get Started →</a>
+        <a href="#how" class="btn-secondary">See How It Works</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-icon">✓</span><span>Guided Zoom interview</span></div>
+        <div class="trust-item"><span class="trust-icon">✓</span><span>Two eulogy versions</span></div>
+        <div class="trust-item"><span class="trust-icon">✓</span><span>Just $95</span></div>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true"><div class="hero-circle"></div></div>
+  </div>
+</section>
+
+<section class="how-it-works" id="how">
+  <div class="container">
+    <p class="section-label animate-on-scroll">Our Process</p>
+    <h2 class="section-title animate-on-scroll stagger-1">Four simple steps to a meaningful tribute</h2>
+    <p class="section-subtitle animate-on-scroll stagger-2">No forms. No templates. Just a real conversation with someone who knows how to listen.</p>
+    <div class="how-grid">
+      <div class="step-card animate-on-scroll stagger-1">
+        <div class="step-number">01</div>
+        <h3 class="step-title">We Talk</h3>
+        <p class="step-desc">A warm, guided 30-minute Zoom interview captures your memories, stories, and the details that made your loved one who they were. We ask the right questions — you just talk.</p>
+        <span class="step-connector" aria-hidden="true">→</span>
+      </div>
+      <div class="step-card animate-on-scroll stagger-2">
+        <div class="step-number">02</div>
+        <h3 class="step-title">We Write</h3>
+        <p class="step-desc">Within 24–48 hours, you receive two eulogy versions — one with your primary emphasis and one with an alternate angle — so you can choose what feels right or combine elements from both.</p>
+        <span class="step-connector" aria-hidden="true">→</span>
+      </div>
+      <div class="step-card animate-on-scroll stagger-3">
+        <div class="step-number">03</div>
+        <h3 class="step-title">You Review</h3>
+        <p class="step-desc">You receive the drafts, tell us what feels right, and we revise until every word is exactly what you want to say. Nothing is final until you say it is.</p>
+        <span class="step-connector" aria-hidden="true">→</span>
+      </div>
+      <div class="step-card animate-on-scroll stagger-4">
+        <div class="step-number">04</div>
+        <h3 class="step-title">We Guarantee It</h3>
+        <p class="step-desc">No payment until you are 100% satisfied. If the eulogy isn't exactly what you want, you don't pay. It's that simple.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sample" id="sample">
+  <div class="container">
+    <div class="sample-inner">
+      <div class="sample-text animate-on-scroll">
+        <p class="section-label">Sample Excerpt</p>
+        <h2 class="section-title">This is what it sounds like</h2>
+        <p class="section-subtitle">Every eulogy we write is unique — built entirely from the stories you share. Here's an anonymized excerpt.</p>
+      </div>
+      <div class="sample-excerpt animate-on-scroll stagger-2">
+        <p>He was the kind of man who fixed things. Not just the screen door or the leaky faucet — though Lord knows he fixed those too, usually on a Saturday morning with a cup of coffee balanced on the porch rail and a transistor radio playing the Reds game.</p>
+        <p>He fixed what was broken in people. When Tom lost his job at the mill in '82, it was Dad who showed up with a truck, a cooler of beer, and a plan. When Aunt Ruth's marriage fell apart, it was Dad she called at two in the morning — and he drove forty minutes in the rain without a single complaint.</p>
+        <p>He graduated from Central High the same spring Kennedy was inaugurated, and he carried that sense of duty with him his whole life. Not the loud kind. The quiet kind — the kind that shows up.</p>
+        <p class="sample-attribution">— From a eulogy for a father, delivered by his eldest daughter</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro-offer" id="pricing">
+  <div class="container">
+    <div class="intro-offer-header">
+      <p class="section-label animate-on-scroll">Pricing</p>
+      <h2 class="section-title animate-on-scroll stagger-1">Special Introductory Offer</h2>
+      <p class="section-subtitle animate-on-scroll stagger-2">Everything you need to honor them well. Nothing you don't.</p>
+    </div>
+    <div class="offer-card animate-on-scroll stagger-3">
+      <div class="offer-badge">Introductory Price</div>
+      <p class="offer-price">$95</p>
+      <p class="offer-tagline">A complete eulogy, just the way you want it</p>
+      <ul class="offer-features">
+        <li>A guided 30-minute Zoom interview</li>
+        <li>Two polished eulogy versions — primary and alternate emphasis</li>
+        <li>Delivered in 24–48 hours</li>
+        <li>Revisions until it's exactly right</li>
+        <li>Formatted for spoken delivery — large print with natural pause markers</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="display:block;text-align:center;width:100%;">Get Started →</a>
+      <p class="offer-guarantee"><strong>Our guarantee:</strong> No payment until you are 100% satisfied. If it's not what you want, you don't pay.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <p class="section-label animate-on-scroll">Frequently Asked Questions</p>
+      <h2 class="section-title animate-on-scroll stagger-1">We understand you have questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>Is this a real person or AI?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Both — and that's what makes it work. A real person conducts your interview, listens to your stories, and asks the follow-up questions that matter. AI assists in the drafting process, which allows us to deliver two high-quality versions in 24–48 hours. Every draft is reviewed and refined by a human writer before you see it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>How fast can you turn this around?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Our standard turnaround is 24–48 hours from the interview to your drafts. We understand that services are often just days away — speed is built into our process.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>What if I cry during the interview?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>You probably will, and that's completely okay. We go at your pace, take breaks when you need them, and never rush. Many families tell us the interview itself felt like a gift — a chance to talk about their loved one with someone who genuinely wanted to listen.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>Can I make changes to the eulogy?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Absolutely. We revise until you're happy — that's our promise. It's also normal to remember things after the interview. You can always send additions and we'll work them in.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>What do I need to prepare?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Nothing at all. We have a structured interview process with questions designed to draw out the stories and details that matter. You just show up and talk. If you happen to have dates, photos, or notes handy, great — but it's not required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>Why do I get two versions?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Because there are always multiple ways to tell a life story. Your primary version emphasizes whatever matters most to you — maybe they were an incredible parent, or a veteran, or a person of deep faith. The alternate version takes a different angle from the same interview. You choose the one that feels right, or combine elements from both.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')"><span>What if I'm not satisfied?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-answer"><p>Then you don't pay. We don't collect payment until you've reviewed the eulogy and told us you're happy with it. We'll revise as many times as it takes. If we can't get it right, you owe nothing. That's our guarantee.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-form-section" id="contact">
+  <div class="container">
+    <div class="contact-header">
+      <p class="section-label animate-on-scroll">Get Started</p>
+      <h2 class="section-title animate-on-scroll stagger-1">We're here when you're ready</h2>
+      <p class="section-subtitle animate-on-scroll stagger-2">Fill out the form below and we'll be in touch within a few hours to schedule your interview.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info animate-on-scroll">
+        <h3>What happens next</h3>
+        <p>Once you reach out, we'll contact you to schedule a 30-minute Zoom interview at a time that works for you — including evenings and weekends.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏱</div>
+          <div class="contact-detail-text"><strong>30 minutes</strong>That's all we need. You talk, we listen and guide the conversation.</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💻</div>
+          <div class="contact-detail-text"><strong>Via Zoom</strong>All interviews are conducted over Zoom. We'll send you the link.</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📝</div>
+          <div class="contact-detail-text"><strong>No preparation needed</strong>We have a structured process. Just bring your memories.</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💰</div>
+          <div class="contact-detail-text"><strong>No payment until you're satisfied</strong>We don't collect payment until you love the eulogy.</div>
+        </div>
+      </div>
+      <div class="contact-form-card animate-on-scroll stagger-2">
+        <div class="form-content" id="contactFormContent">
+          <h3>Contact Us</h3>
+          <p class="form-subtitle">We'll get back to you within a few hours.</p>
+          <div class="form-field">
+            <label class="form-label" for="contactName">Your Name</label>
+            <input type="text" class="form-input" id="contactName" placeholder="First and last name">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="contactEmail">Email Address</label>
+            <input type="email" class="form-input" id="contactEmail" placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="contactPhone">Phone Number</label>
+            <input type="tel" class="form-input" id="contactPhone" placeholder="(555) 123-4567">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="contactDate">When is the service?</label>
+            <input type="date" class="form-input" id="contactDate">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="contactNotes">Anything you'd like us to know (optional)</label>
+            <textarea class="form-textarea" id="contactNotes" placeholder="Tell us a little about your loved one, or let us know if you have any questions..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitContactForm()">Send My Information →</button>
+        </div>
+        <div class="form-success" id="contactSuccess">
+          <div class="check-circle">✓</div>
+          <h3>Thank You</h3>
+          <p>We've received your information and will be in touch within a few hours to schedule your interview. If your service is very soon and you need us right away, please call us directly at (555) 123-4567.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2 class="animate-on-scroll">Every life has a story<br>worth telling well</h2>
+    <p class="animate-on-scroll stagger-1">Just $95 for a complete, polished eulogy. No payment until you're satisfied.</p>
+    <div class="final-cta-actions animate-on-scroll stagger-2">
+      <a href="#contact" class="btn-primary">Get Started →</a>
+    </div>
+    <div class="final-contact animate-on-scroll stagger-3">
+      <a href="mailto:hello@quitewellsaid.com">✉️ hello@quitewellsaid.com</a>
+      <span style="font-size:0.85rem;color:var(--earth);">Available evenings & weekends</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">Quite Well Said</span>
+      <ul class="footer-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#sample">Sample</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <span class="footer-copy">© 2026 Quite Well Said. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); document.querySelector('.nav-links').classList.remove('show'); }
+  });
+});
+function submitContactForm() {
+  const name = document.getElementById('contactName').value.trim();
+  const email = document.getElementById('contactEmail').value.trim();
+  const phone = document.getElementById('contactPhone').value.trim();
+  if (!name || !email || !phone) { alert('Please fill in your name, email, and phone number.'); return; }
+  document.getElementById('contactFormContent').classList.add('hidden');
+  document.getElementById('contactSuccess').classList.add('visible');
+}
+</script>
+</body>
+</html>
